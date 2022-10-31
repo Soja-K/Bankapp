@@ -1,0 +1,35 @@
+<div class="row">
+
+    <div class="col-4"></div>
+
+    <div class="col-4 container bg-light mt-5 rounded-5 shadow"><br><br>
+        <div class="text-center">
+            <img src="../../assets/images/bimagess.jpg" class="w-25 h-25"><br>
+        </div><br>
+        <h1 align="center">My Bank</h1>
+        <h6 class="text-center">{{aim}}</h6><br>
+        <input (change)="acnoChange($event)" type="text" [placeholder]="accounts"
+            class="form-control rounded-pill shadow-lg " id="accno"><br>
+        <input (change)="pswdChange($event)"  type="password" placeholder="Password" class="form-control rounded-pill shadow-lg" id="pswd"><br><br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary rounded-pill shadow-lg" (click)="login()" type="button">login</button><br>
+            <span> <a style="text-decoration:none;" href="#">&nbsp;&nbsp;&nbsp;forgot password?</a>&nbsp;&nbsp;or <a
+                    style="text-decoration:none;" href="./signup.html">sign up</a></span> <br>
+
+        </div><br>
+
+
+
+
+
+
+    </div>
+    <div class="col-4"></div>
+
+
+
+
+
+
+
+</div>
