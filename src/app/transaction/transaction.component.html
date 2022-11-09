@@ -1,0 +1,25 @@
+<!-- <p>transaction works!</p> -->
+
+
+<h1 style="text-align:center;color:blue">Transaction</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let t of transaction">
+            <td>{{t.type}}</td>
+            <td>{{t.amount}}</td>
+        </tr>
+        <!-- <tr>
+            <td>Debit</td>
+            <td>1000</td>
+        </tr> -->
+    </tbody>
+</table>
+<div class="text-center mt-4">
+<a   id="a1"routerLink="/dashboard">HOME</a>
+</div>

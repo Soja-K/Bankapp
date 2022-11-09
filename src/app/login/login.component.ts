@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from 'src/services/data.service';
 
 @Component({
   selector: 'app-login',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {//3rd execution
-  aim = 'your perfect banking partner';
+  aim = 'Your Perfect Banking Partner';
   accounts = "Enter your accno here ";
 
 
@@ -16,7 +18,12 @@ export class LoginComponent implements OnInit {//3rd execution
   pswd = '';
 
 
-  constructor() { } //1st execution
+  constructor(private router:Router,private ds:DataService) { } //1st execution
+                  //  1st router is the property of         and the second router the class of already created component class//
+
+  //dependency injection
+
+
 
   ngOnInit(): void {  //life cycle hooks-initial process
   }
@@ -38,28 +45,61 @@ export class LoginComponent implements OnInit {//3rd execution
     console.log(event.target.value);
     this.pswd = event.target.value;
   }
-
-
-
-
   login() {
-    // alert("login clicked")
+    //alert("login clicked")
     var acno = this.acno;
     var pswd= this.pswd;
-
-    var userDetails = this.userDetails;
-    if (acno in userDetails) {
-      if (pswd == userDetails[acno]['password']) {
+    const result=this.ds.login(acno,pswd);
+    if(result){
+    // var userDetails = this.userDetails;
+    // if (acno in userDetails) {
+    //   if (pswd == userDetails[acno]['password']) {
         alert("login success full");
 
+        // this is used for the connection two component classes//
+
+        this.router.navigateByUrl('dashboard');    
+
       }
-      else {
-        alert("Incorrect password");
-      }
-    }
-    else {
-      alert("user does not exist")
+    //   else {
+    //     alert("Incorrect password");
+    //   }
+    // }
+    // else {
+    //   alert("User does not exist")
     }
   }
 
-}
+
+
+
+
+
+
+
+  // login(a:any,p:any) {
+          // .......... event binding usind template referencing...........//
+
+
+  //   // alert("login clicked")
+  //   // var acno = this.acno;
+  //   // var pswd= this.pswd;
+  //   var acno=a.value;
+  //   var pswd=p.value;
+
+  //   var userDetails = this.userDetails;
+  //   if (acno in userDetails) {
+  //     if (pswd == userDetails[acno]['password']) {
+  //       alert("login success full");
+
+  //     }
+  //     else {
+  //       alert("Incorrect password");
+  //     }
+  //   }
+  //   else {
+  //     alert("user does not exist")
+  //   }
+  // }
+
+//}

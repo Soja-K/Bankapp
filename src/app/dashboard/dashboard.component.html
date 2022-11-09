@@ -1,0 +1,103 @@
+<!-- <p>dashboard works!</p> -->
+
+
+<div class="row">
+
+    <h1 class="text-center">Welcome {{user}}</h1><br><br>
+    <div class="text-center">
+        <a routerLink="/transaction">View Transaction    Details</a>
+    </div>
+    <div class="col-1"></div>
+
+
+    <div class=" head1 col-4 container  mt-5 rounded-5 shadow-lg"><br>
+        <div class="text-center">
+            <!-- <img src="../../assets/images/bimagess.jpg" class="w-25 h-25"><br> -->
+            <i class="bi bi-bank2"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
+                <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+              </svg>
+        </div><br>
+        <h1 align="center">Deposit</h1><br>
+
+        <!-- <input [(ngModel)]="uname" type="text" placeholder="User Name" class="form-control rounded-pill shadow-lg " id="dash_name"><br> -->
+        <input [(ngModel)]="acno" type="text" placeholder="Enter your acno" class="form-control rounded-pill shadow-lg "
+            id="depo_accno"><br>
+        <input [(ngModel)]="pswd" type="password" placeholder="Password" class="form-control rounded-pill shadow-lg"
+            id="depo_pswd"><br>
+        <input [(ngModel)]="amount" type="text" placeholder="Amount" class="form-control rounded-pill shadow-lg "
+            id="depo_amount"><br><br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary rounded-pill shadow-lg" (click)="deposit()"
+                type="button">Deposit</button><br><br>
+            <!-- <a class="text-center" style="text-decoration: none;" routerLink="">Sign in</a><br> -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- </div> -->
+    <!-- <div class="col-4">
+        
+            </div> -->
+    <div class="col-2"></div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="row"> -->
+
+
+
+<div class=" head2 col-4 container mt-5 rounded-5 shadow-lg"><br>
+    <div class="text-center">
+        <!-- <img src="../../assets/images/bimagess.jpg" class="w-25 h-25"><br> -->
+        <i class="bi bi-bank2"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
+                <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+              </svg>
+    </div><br>
+    <h1 align="center">Withdraw</h1><br>
+
+    <!-- <input [(ngModel)]="uname" type="text" placeholder="User Name" class="form-control rounded-pill shadow-lg " id="dash_name"><br> -->
+    <input [(ngModel)]="acno1" type="text" placeholder="Enter your acno" class="form-control rounded-pill shadow-lg "
+        id="with_accno"><br>
+    <input [(ngModel)]="pswd1" type="password" placeholder="Password" class="form-control rounded-pill shadow-lg"
+        id="with_pswd"><br>
+    <input [(ngModel)]="amount1" type="text" placeholder="Amount" class="form-control rounded-pill shadow-lg "
+        id="with_amount"><br><br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary rounded-pill shadow-lg" (click)="withdraw()" type="button">Withdraw</button><br><br>
+        <!-- <a class="text-center" style="text-decoration: none;" routerLink="">Sign in</a><br> -->
+    </div>
+</div>
+<div class="col-1">
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="col-4">
+            
+                </div>
+            
+             -->
+<!-- </div>
+     -->
+    </div>

@@ -1,3 +1,22 @@
 .img{
     align-items: center;
 }
+
+/* .child{
+    display: inline-block;
+  padding:100px;
+  margin-top: -100px;
+  margin-left: 150px;
+} */
+
+.head1{
+    background-color:rgb(172, 189, 222);
+}
+
+.head2{
+    background-color:rgb(172, 189, 222);
+}
+
+body{
+    background: #ecf0f3;
+}

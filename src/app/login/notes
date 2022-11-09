@@ -9,10 +9,72 @@ html-view
 
 1.1component to view (ts->html)
 a) string interpolation-{{expression}}
-b)property binding-  [attribute name]="property"
+b)property binding-  [attribute name]="property" 
 
 
-1.2  view to component  (html to ts)
+1.2  view to component  (html-> ts)
 
 a)Event Binding  -(event name)="function name()"
 b)Event binding using  $(event) - (event name)="function name($event)
+c)Event binding using  template referencing variable - #variable name
+
+
+2)  Two way binding
+
+
+Angular routing
+
+-to set path for a component
+{
+    path:value,component:class Name
+}
+
+
+use <router-outle></router-outle> inside root component 
+
+
+Dependency injection
+-------------------------
+
+To share data between two different classes
+
+
+
+Angular services
+-------------------------------------------
+
+ng g s service name
+
+Angular Directives
+-------------------------------------------
+
+To manipulate DOM elements
+
+a)component directives
+
+
+
+b)structural directives --> used change thse structure of the html page
+1)ngFor
+
+
+
+Angular forms
+a)Template Driven Forms(first design html)--->used for designing the html page
+
+
+b)Model Driven Forms(first ts design -> html file sesign)--->mainly used for advanced validation methods
+
+1)Reactive FormsModule
+
+i)  form group,array,control
+(we can directly add validation methods)
+->Add validation
+->import reactive forms module
+
+
+
+
+
+ii)  
+
