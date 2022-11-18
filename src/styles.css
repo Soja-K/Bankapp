@@ -21,5 +21,12 @@ body{
     background: #ecf0f3;
 }
 .head4{
-    background-color:rgb(226, 218, 200);
+    background-color:rgb(172, 189, 222);
+}
+.head8{
+    margin-left: 1360px;
+    margin-bottom: 20px;
+}
+.h1{
+    background-color:blue;
 }

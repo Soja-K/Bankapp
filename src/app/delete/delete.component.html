@@ -1,0 +1,8 @@
+<!-- <p>delete works!</p> -->
+<div *ngIf="item" class="text-center">
+    <!--  *ngIf ="item"-to set the visibility of the data-->
+    
+    <h6>Are You Want To Delete This Account:{{item}}</h6>
+    <button class=" btn btn-success btn-outline me-2" >Yes</button>
+    <button class=" btn btn-danger btn-outline me-2" (click)="cancel()" >No</button>
+    </div>

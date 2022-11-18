@@ -1,10 +1,29 @@
 <!-- <p>dashboard works!</p> -->
+<!-- <h3>Sytem Date ana Time:{{SystemDate}}</h3> -->
+<div class="text-end">
+    
+    <button class=" btn btn-success border-dark btn-outline shadow-lg  me-2" (click)="logout()" type="button">Logout</button>
+    <button class=" btn btn-danger me-2 border-dark " (click)="delete()" type="button">delete</button>
+</div><br><br>
 
-<h1 class="text-center">Welcome {{user}}</h1>
 <div class="text-center">
-    <a routerLink="/transaction">View Transaction Details</a>
+    <h1>Welcome {{user}}</h1>
 </div>
-<div class="row">
+
+<!-- <div class="text-center"> -->
+<div class="text-center">
+    <b><a routerLink="/transaction">View Transaction Details</a></b>
+    <!-- used to display time in different format -->
+    <h3>Sytem Date and Time:{{SystemDate | date:'short'}}</h3>
+
+    <!-- <button class="head8 btn btn-danger shadow-lg float-end"(click)="logout()"type="button">Logout</button><br><br>
+     -->
+
+</div>
+<app-delete [item]="acno" (click)="onCancel()"></app-delete>
+
+
+<div class="row" [ngClass]="acno? 'style2': '' ">
 
     <!-- <h1 class="text-center">Welcome {{user}}</h1><br><br>
     <div class="text-center">
@@ -13,8 +32,8 @@
     <div class="col-1"></div>
 
 
-
-    <div class=" head1 col-4 container  mt-5 rounded-5 shadow-lg"><br>
+    <!-- [ngClass]="acno? 'style1':''" -->
+    <div class=" head1  col-4 container  mt-5 rounded-5 shadow-lg "><br>
         <form [formGroup]="depositForm">
             <div class="text-center">
 

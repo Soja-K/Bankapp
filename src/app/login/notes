@@ -80,5 +80,11 @@ Local Storage
 --getItem
 -removeItem
 
+Parent child relationship
 
+parent to child coomunication -@Input()
+child to parent coomunication -@Output()
+
+Angular pipes
+{{value-expression  | date [:format[timezones]}}
 
